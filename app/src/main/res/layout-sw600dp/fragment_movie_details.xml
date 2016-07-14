@@ -1,0 +1,80 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/LinearLayoutMargin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <!-- Backdrop appears only in tablet mode. -->
+                <ajpatel72.popularmovies.utils.ScalingImageView
+                    android:id="@+id/backdrop2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/border_white"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_below="@+id/x"
+                android:layout_marginTop="-30dp"
+                android:orientation="horizontal">
+
+                <include layout="@layout/activity_details_image" />
+
+                <include layout="@layout/activity_details_infobox" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_weight="2">
+
+                <include layout="@layout/activity_details_plot" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <include layout="@layout/activity_details_trailers" />
+
+        <include layout="@layout/activity_details_reviews" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,67 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/trailers_header_container"
+            android:paddingTop="16dp"
+            android:paddingRight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/InfoboxText"
+                android:layout_weight="99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/plot"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="@string/btnFav_text"
+                android:textStyle="italic|bold"
+                android:paddingRight="0dp"
+                android:paddingTop="3dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                 />
+
+            <ImageButton
+                android:id="@+id/btnFav"
+                android:background="@drawable/ic_favorite_border_black"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:contentDescription="@string/favorite_this_movie"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp" />
+
+        </LinearLayout>
+
+        <View style="@style/Divider_Primary" />
+
+        <TextView
+            android:id="@+id/plot"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</merge>

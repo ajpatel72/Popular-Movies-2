@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.UdacityPopularMovies" parent="BaseTheme">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary</item>
+
+        <!-- This is the styling for action bar -->
+        <!--<item name="actionBarStyle">@style/MyActionBar</item>-->
+        <!--To change the text styling of options menu items</item>-->
+        <item name="android:itemTextAppearance">@style/MyActionBar.MenuTextStyle</item>
+        <!--To change the background of options menu-->
+        <item name="android:itemBackground">@color/menuItemBackground</item>
+
+    </style>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+</resources>

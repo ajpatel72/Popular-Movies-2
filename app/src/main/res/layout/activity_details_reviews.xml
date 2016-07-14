@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reviews_outer_container"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_margin"
+    android:layout_marginLeft="@dimen/card_margin"
+    android:layout_marginRight="@dimen/card_margin"
+    android:layout_weight="@integer/cardViewLeft">
+
+    <LinearLayout
+        android:paddingBottom="@dimen/card_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:id="@+id/reviews_header_container"
+
+            style="@style/Widget.CardContent"
+            android:paddingLeft="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/reviews_header"
+                style="@style/InfoboxText"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:text="@string/movie_reviews"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/cardview_dark_background" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider_Primary"
+            />
+
+            <LinearLayout
+                android:id="@+id/reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:orientation="vertical"
+                android:paddingRight="16dp"
+                android:showDividers="middle" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

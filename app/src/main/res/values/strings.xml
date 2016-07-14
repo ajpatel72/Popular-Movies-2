@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+    <string name="param_poster_size">w185</string>
+    <string name="param_backdrop_size">w780</string>
+
+    <string name="pref_key_sort">pref_sort</string>
+    <string name="default_pref">popularity.desc</string>
+
+    <string name="menu_sort">Sorting</string>
+
+    <string name="menu_sort_popularity">Most Popular</string>
+    <string name="menu_sort_rating">Top Rated</string>
+    <string name="menu_sort_favorites">Favorites</string>
+
+    <string name="title_activity_details">Details Activity</string>
+
+    <string name="released">release date</string>
+    <string name="average_rating">average rating</string>
+    <string name="average_rating_new"> %.1f / 10</string>
+
+    <string name="plot">OVERVIEW:</string>
+    <string name="movie_reviews">MOVIE REVIEWS:</string>
+    <string name="movie_trailers">MOVIE TRAILERS:</string>
+    <string name="share_this_movie_trailer">Share this Movie Trailer</string>
+    <string name="movie_trailer_thumbnail">Movie Trailer Thumbnail</string>
+    <string name="favorite_this_movie">Favorite this movie.</string>
+
+    <string name="title_not_available">Title Not Available.</string>
+    <string name="rating_not_available">Rating Not Available.</string>
+    <string name="year_not_available">Year Not Available.</string>
+    <string name="plot_not_available">Overview Not Available.</string>
+
+    <string name="share_text_begin">Hey, check out the trailer of the new movie,\t </string>
+    <string name="share_text_end">.\n\n Watch it here:\t </string>
+
+    <string name="no_saved_favorites">You Have No Saved Favorites!</string>
+
+    <string name="btnFav_text">fav</string>
+    <string name="btnShare_text">share</string>
+    <string name="movie_review_icon">Movie Review Icon.</string>
+
+</resources>
